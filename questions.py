@@ -1,50 +1,53 @@
-"""#if statement
 
-marks=90
+#checking if number is postive or not
 
-if marks>80:
-    print("you have scored good")
-
-# if else statement
-
-marks=40
-if marks>35:
-    print("pass")
+num= int(input("enter the number :"))
+if num>0:
+    print("the number is positive ")
 else:
-    print("fail")
+    print("the number is negative")
 
-#if-elif-else statement
+#checking if number is odd or even
 
-marks=int(input("enetr your marks:"))
-if marks>=80:
-    print("outstanding")
-elif marks> 60 and marks<80 :
-    print("great")
+num= int(input("enter the number :"))
+if num%2==0:
+    print("the number is even")
 else:
-    print("improvement")
+    print("the number is odd")
 
-#nested if statement
+#write a program to create area calcultor
 
-marks= int(input("enetr your marks"))
+print(" AREAAA CALCULATORRRR")
 
-if marks>90:
-    print("you will get new phone ")
-    if marks>=99:
-        print("you can go on a trip")
+print(""" PRESS 1 TO GET AREA OF SQUARE
+      PRESS 2 TO GET AREA OF RECTAGLE
+      PRESS 3 TO GET AREA OF CIRCLE
+      PRESS 4 TO GET ARAE OF TRIANGLE
+      """)
+
+choice=int(input("enter your choice betweem 1-4 :"))
+
+if choice==1:
+    side= float(input("enter the length of side:"))
+    area=side**2
+    print("area of square is: ",area)
+
+elif choice==2:
+    l=float(input("enter length : "))
+    b=float(input("enter breadth : "))
+    area=l*b
+    print("area of rectangle is:",area)
+
+elif choice==3:
+    r=float(input("enter the radius :"))
+    area=(22/7)*r**2
+    print("the area of cicle is:",area)
+
+elif choice==4:
+    b=float(input("enter base : "))
+    h=float(input("enter height : "))
+    area=(1/2)*b*h
+    print("the area of triangle is:",area)
+
 else:
-    print("no phone for a month")
-
-# short hand if statement"""
-
-marks=89
-
-if marks>80 : print("goood")
-
-# short hand if-else statement
-
-marks=89
-
-print("outstanding") if marks>90 else print("not greatt")
-
-
-
+    print("invalid choice")
