@@ -51,3 +51,27 @@ elif choice==4:
 
 else:
     print("invalid choice")
+
+#check weather a letter is vowel or not
+ 
+letter =input("enter a letter: ")
+if (letter in"aeiou") or (letter in "AEIOU"):
+    print("its a vowel")
+else:
+    print("not a vowel")
+
+#check weather a umber is 2 digit ,3 digit or so on upto 5 digits
+
+num=int(input("enter the number: "))
+if num>=0 and num<=9:
+    print("its a single digit number")
+elif num>=10 and num<=99:
+    print("the number is 2 digit ")
+elif num>=100 and num<=999:
+    print("the number is 3 digit ")
+elif num>=1000  and num<=9999:
+    print("the number is 4 digit ")
+elif num>=10000 and num<=99999:
+    print("the number is 5 digit ")
+else:
+    print("invalid")
