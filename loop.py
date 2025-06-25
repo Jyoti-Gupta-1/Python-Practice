@@ -56,19 +56,6 @@ for i in range(1,4):
     print(i)
 
 
-"""solving patterns:
- 1
- 12
- 123
- 1234
- 12345"""
-
-for i in range(1,6):
-    for j in range (1,i+1):
-        print(j, end="")
-    print()
-
-
 #for loop with conditional statement
 #for finding common multiples of two numbers
 
